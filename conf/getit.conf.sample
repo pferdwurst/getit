@@ -1,0 +1,20 @@
+--- !ruby/object:Getit::Configuration
+    client:
+      issuer_id: dev-intuit.ipp.prod
+      consumer_key: abcdefghijklmnopqrstuvwxyz  
+      consumer_secret: abcdefghijklmnopqrstuvwxyz 
+      certificate_path: conf/auth/cert.key
+      
+    customer:
+      customer_id: customer_id 
+      download_dir: /tmp/downloads
+    
+    last_modified: 1418236894
+    
+    portfolio: !ruby/object:Getit::Portfolio
+        portfolio_name: A Name
+        accounts:
+            - !ruby/object:Getit::Account
+                account_name: Checking Account
+                account_id: 123456
+                institution_id: 1001
