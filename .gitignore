@@ -17,3 +17,8 @@ test/version_tmp
 tmp
 *.swp
 .DS_Store
+vendor/ruby
+.idea
+.project
+.rvmrc
+
