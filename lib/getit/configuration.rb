@@ -7,7 +7,8 @@ module Getit
    
     class << self
       def load_config
-        @config =  YAML.load_file(PORTFOLIO_CONF) || self.default
+        logger.info "Loading the configuration at #{PORTFOLIO_CONF}"
+        @config =  YAML.load_file(PORTFOLIO_CONF) 
       end
 
       def config( key )
@@ -24,10 +25,6 @@ module Getit
       
       def load_portfolio
         YAML.load_file("conf/portfolio.conf") || self.default
-      end
-
-      def default
-        default_conf = { "key" => "value"}
       end
     end
   end

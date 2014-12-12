@@ -9,9 +9,14 @@ describe "The Configuration" do
   end
 
   
-  it "must exist" do
+  it "must not be nil" do
     @config.wont_be_nil
   end
+  
+  it "must contain a portfolio" do
+    @config.portfolio.wont_be_nil
+  end
+  
 
   
 end

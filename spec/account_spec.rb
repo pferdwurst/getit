@@ -1,7 +1,8 @@
-require 'minitest/autorun'
 require 'getit'
 require 'getit/account'
 require 'getit/configuration'
+require 'minitest/autorun'
+
 
 describe "The Account" do
 

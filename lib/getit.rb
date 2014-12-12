@@ -1,6 +1,12 @@
 require "getit/version"
 require 'yaml'
 require 'active_model'
+require 'logging'
+include Logging.globally
+
+
+Logging.logger.root.appenders = Logging.appenders.stdout
+Logging.logger.root.level = :info
 
 module Getit
 
@@ -11,5 +17,8 @@ module Getit
 
   Dir[File.dirname(__FILE__) + '/geit/*.rb'].each {|file| require file }
 
+
+  
+  
 
 end
